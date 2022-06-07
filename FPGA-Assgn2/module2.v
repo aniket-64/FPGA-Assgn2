@@ -1,11 +1,11 @@
-module module2();
+module module2;
 
-    reg [31:0] val[0:39];
-    reg [4:0] i1 [0:39];
-    reg [4:0] i2 [0:39];
-    reg cp [0:39];
-
-val[0] =14; 
+    reg [31:0] val[39:0];
+    reg [4:0] i1 [39:0];
+    reg [4:0] i2 [39:0];
+    reg cp [39:0];
+initial begin
+    val[0] =14; 
 i1 [0]=4;
 i2[0]=18;
 cp[0]=1;
@@ -49,6 +49,8 @@ val[10]=97;
 i1[10]=17;
 i2[10]=13;
     cp[10]=1;
+
+end
 
 
     

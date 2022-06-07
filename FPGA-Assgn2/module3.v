@@ -10,16 +10,20 @@ module mod3(input [31:0] num,
 
         reg status;
         reg [4:0] curr_index;
-        curr_index = index1;
+        
         //reg [4:0] next_index;
         reg [31:0] curr;
         reg [31:0] in_num;
-        in_num = num;
+        integer k =0;
 
         mod1 m1();
         module2 m2();
         
+        initial begin
         status = 1;
+        curr_index = index1;
+        in_num = num;
+        end
           
         always @(status) begin
             
@@ -55,14 +59,14 @@ module mod3(input [31:0] num,
                 status = ~status;
             end
 
-            integer i = 0;
-                for(; i < 40 && m2.cp[i] == 1; i+=1) begin
-                    ;
+            
+                for(k = 0; k < 40 && m2.cp[k] == 1; k+=1) begin
+                    
                 end
-                m2.cp[i] = 1;
-                m2.val[i] = num;
-                m2.i1[i] = index1;
-                m2.i2[i] = index2;   
+                m2.cp[k] = 1;
+                m2.val[k] = num;
+                m2.i1[k] = index1;
+                m2.i2[k] = index2;   
         end
     
     
