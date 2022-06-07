@@ -1,4 +1,4 @@
-module module2()
+module module2();
 
 reg [41:0] tab[0:39];
 // reg[0:31] = value ; reg[32:36] = index of that value in table 1 ;reg[37:41] = index of that value in table 2; 
