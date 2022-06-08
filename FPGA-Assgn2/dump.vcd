@@ -1,11 +1,11 @@
 $date
-	Wed Jun 08 02:00:20 2022
+	Wed Jun 08 10:49:08 2022
 $end
 $version
 	Icarus Verilog
 $end
 $timescale
-	1ps
+	1ns
 $end
 $scope module tb $end
 $var reg 5 ! i1 [4:0] $end

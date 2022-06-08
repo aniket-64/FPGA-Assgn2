@@ -1,5 +1,5 @@
 `include "module3.v"
-`timescale 1ps/1ps
+`timescale 1ns/1ns
 module tb;
 
 reg [31:0] num;
