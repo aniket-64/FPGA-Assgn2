@@ -14,6 +14,7 @@ module mod31(input [31:0] num,
     //reg [4:0] index2;
 
     always@(rin) begin
+        #1;
         if (rin == 0)begin
             rout <= 0;
         end
